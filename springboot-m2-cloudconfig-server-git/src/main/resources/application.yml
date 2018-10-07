@@ -9,5 +9,17 @@ spring:
       server:
         git:
           uri: https://github.com/venkikg/github-springboot-cloudconfig-tolls
-          username: venkikg
-          password: 777143@git
+          username: #git username
+          password: #git pwd
+          search-paths:
+          - 'station*'
+          
+          repos:
+            perf:
+              pattern:
+              - "/perf*"
+            uri: https://github.com/venkikg/github-springboot-cloudconfig-tolls-perf
+            search-paths:
+              pattern:
+              - 'station*'
+            
